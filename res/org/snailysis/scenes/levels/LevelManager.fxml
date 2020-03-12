@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="720.0" prefWidth="880.0" style="-fx-background-color: #006600;" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TitledPane alignment="CENTER" contentDisplay="RIGHT" text="Default">
+         <content>
+            <TilePane fx:id="defaultLvlSelection" alignment="CENTER" hgap="80.0" minHeight="700.0" prefColumns="0" prefRows="0" style="-fx-background-color: #339933;" vgap="60.0">
+               <padding>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </padding>
+            </TilePane>
+         </content>
+      </TitledPane>
+      <TitledPane alignment="CENTER" text="Custom">
+         <content>
+            <TilePane fx:id="customLvlSelection" alignment="CENTER" hgap="80.0" minHeight="700.0" prefColumns="0" prefRows="0" style="-fx-background-color: #339933;" vgap="60.0">
+               <padding>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </padding>
+            </TilePane>
+         </content>
+      </TitledPane>
+   </children>
+</VBox>

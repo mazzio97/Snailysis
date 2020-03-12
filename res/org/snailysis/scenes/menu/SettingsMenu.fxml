@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="1000.0" style="-fx-background-color: #339933; -fx-border-color: #006600;">
+         <children>
+            <Button fx:id="off" layoutX="438.0" layoutY="57.0" mnemonicParsing="false" onAction="#setOFFMusic" prefHeight="60.0" prefWidth="100.0" style="-fx-background-color: #006600;" text="OFF" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="on" disable="true" layoutX="329.0" layoutY="57.0" mnemonicParsing="false" onAction="#setONMusic" prefHeight="60.0" prefWidth="100.0" style="-fx-background-color: #006600;" text="ON" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="187.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Music" wrappingWidth="113.13671875">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="210.0" prefHeight="200.0" style="-fx-background-color: #339933; -fx-border-color: #006600;">
+         <children>
+            <Button fx:id="medium" disable="true" layoutX="481.0" layoutY="57.0" mnemonicParsing="false" onAction="#setMEDIUM" prefHeight="60.0" prefWidth="140.0" style="-fx-background-color: #006600;" text="MEDIUM" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="easy" layoutX="329.0" layoutY="57.0" mnemonicParsing="false" onAction="#setEASY" prefHeight="60.0" prefWidth="140.0" style="-fx-background-color: #006600;" text="EASY" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="147.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficult" wrappingWidth="154.00001406669617">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Text>
+            <Button fx:id="hard" layoutX="632.0" layoutY="57.0" mnemonicParsing="false" onAction="#setHARD" prefHeight="60.0" prefWidth="154.0" style="-fx-background-color: #006600;" text="HARD" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

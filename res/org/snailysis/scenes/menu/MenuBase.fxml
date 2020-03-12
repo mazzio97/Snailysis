@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pannelMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #339933;" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<SplitPane fx:id="split" dividerPositions="0.23" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #339933; -fx-border-color: #006600;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<items>
+				<AnchorPane fx:id="pannelButton" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="370.0" style="-fx-background-color: #006600;">
+					<children>
+						<Button fx:id="buttonBase" contentDisplay="CENTER" layoutX="39.0" layoutY="42.0" mnemonicParsing="false" onAction="#presssNailysis" prefHeight="74.0" prefWidth="280.0" style="-fx-background-color: #339933;" text="sNailysis" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+							<font>
+								<Font size="55.0" />
+							</font>
+						</Button>
+						<Button fx:id="buttonPlay" layoutY="190.0" mnemonicParsing="false" onAction="#pressPlay" prefHeight="74.0" prefWidth="280.0" style="-fx-background-color: #006600;" text="Play" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+							<font>
+								<Font size="38.0" />
+							</font>
+						</Button>
+						<Button fx:id="buttonSettings" layoutY="271.0" mnemonicParsing="false" onAction="#pressSettings" prefHeight="74.0" prefWidth="280.0" style="-fx-background-color: #006600;" text="Settings" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+							<font>
+								<Font size="38.0" />
+							</font>
+						</Button>
+						<Button fx:id="buttonBuilder" layoutY="352.0" mnemonicParsing="false" onAction="#pressBuilder" prefHeight="74.0" prefWidth="280.0" style="-fx-background-color: #006600;" text="Builder" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+							<font>
+								<Font size="38.0" />
+							</font>
+						</Button>
+						<Button fx:id="buttonCredit" layoutY="433.0" mnemonicParsing="false" onAction="#pressCredit" prefHeight="74.0" prefWidth="280.0" style="-fx-background-color: #006600;" text="Credit" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+							<font>
+								<Font size="38.0" />
+							</font>
+						</Button>
+						<Button fx:id="buttonExit" layoutY="514.0" mnemonicParsing="false" onAction="#pressExit" prefHeight="74.0" prefWidth="280.0" style="-fx-background-color: #006600;" text="Exit" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+							<font>
+								<Font size="38.0" />
+							</font>
+						</Button>
+					</children>
+				</AnchorPane>
+				<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0">
+					<content>
+						<AnchorPane fx:id="panelBase" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="900.0" style="-fx-background-color: #339933;">
+							<children>
+								<ImageView fitHeight="634.0" fitWidth="711.0" layoutX="173.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../../images/menu/sNailysis.jpg" />
+									</image>
+								</ImageView>
+							</children>
+						</AnchorPane>
+					</content>
+				</ScrollPane>
+			</items>
+		</SplitPane>
+	</children>
+</AnchorPane>

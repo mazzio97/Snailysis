@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="levelFailed" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="400.0" style="-fx-background-color: #424953;">
+      	<children>
+      		<ImageView fx:id="LevelFalled" fitHeight="200.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+      			<VBox.margin>
+      				<Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+      			</VBox.margin>
+               <image>
+                  <Image url="@../../images/menu/LevelFalled.jpg" />
+               </image>
+      		</ImageView>
+      		<HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" style="-fx-background-color: #424953;">
+      			<children>
+      				<Button fx:id="menuBtn" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #d71c5f;" text="Menu" textFill="WHITE" />
+      				<Button fx:id="playAgainBtn" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #d71c5f;" text="Again" textFill="WHITE" />
+      			</children>
+      		</HBox>
+      	</children>
+      	<padding>
+      		<Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+      	</padding>
+      </VBox>
+      <VBox fx:id="levelComplete" alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="400.0" style="-fx-background-color: #424953;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="levelComplet" fitHeight="200.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../../images/menu/LevelComplete.jpg" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Button fx:id="menuBtn1" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #bfca37;" text="Menu" />
+                  <Button fx:id="playAgainBtn1" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #bfca37;" text="Again" />
+                  <Button fx:id="nextLvlBtn1" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #bfca37;" text="Next" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
